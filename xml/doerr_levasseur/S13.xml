@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="s-Using_Sage_for_Sets">
+<title>Using Sage</title>
+<introduction>
+	Technology can prove very useful when studying mathematics. Software packages such Maple, Mathematica, and Matlab each have their advantages and disadvantages. We will use Sage, a readily available open source computer algebra system, as our choice of software. Sage can be run on an individual computer or over the Internet on a server. You can even access Sage from your smart phone. For our purposes, Sage cells are embedded into the textbook, so there is nothing to install on your computer. Simply, evaluate the cell. You can even change the preloaded commands in the cell if you wish.
+</introduction>
+
+<p>To work with sets in Sage, a set is an expression of the form  Set(<em>list</em>).  By wrapping a list with <c>Set( )</c>, the order of elements appearing in the list and their duplication are ignored.  For example, L1 and L2 are two different lists, but notice how as sets they are considered equal:</p>
+<sage>
+<input>
+L1=[3,6,9,0,3]
+L2=[9,6,3,0,9]
+[L1==L2, Set(L1)==Set(L2) ]
+</input>
+<output>[False,True]
+</output>
+</sage>
+<p>The standard set operations are all methods and/or functions that can act on Sage sets. <em>You need to evalute the following cell to use the subsequent cell.</em></p>
+<sage>
+<input>
+A=Set(srange(5,50,5))
+B=Set(srange(6,50,6))
+[A,B]
+</input>
+<output>
+[{35, 5, 40, 10, 45, 15, 20, 25, 30}, {36, 6, 42, 12, 48, 18, 24, 30}]
+</output>
+</sage>
+<p>
+We can test membership, asking whether 10 is in each of the sets:
+</p>
+<sage>
+<input>
+[10 in A, 10 in B]
+</input>
+<output>
+[True, False]
+</output>
+</sage>
+<p>
+The ampersand is used for the intersection of sets.  Change it to the vertical bar, |, for union. 
+</p>
+<sage>
+<input>
+A &amp; B
+</input>
+<output>
+{30}
+</output>
+</sage>
+<p>Symmetric difference and set complement are defined as <q>methods</q> in Sage. Here is how to compute the symmetric difference of <m>A</m>  with  <m>B</m>, followed by their differences.</p>
+<sage>
+<input>
+[A.symmetric_difference(B),A.difference(B),B.difference(A)]
+</input>
+<output>
+[{35, 36, 5, 6, 40, 42, 12, 45, 15, 48, 18, 20, 24, 25, 10},
+ {35, 5, 40, 10, 45, 15, 20, 25},
+ {48, 18, 36, 6, 24, 42, 12}]
+</output>
+</sage>
+
+
+<p>Here is a simple example of a cartesian product of two sets:</p>
+<sage>
+<input>
+A=Set([0,1,2])
+B=Set(['a','b'])
+P=cartesian_product([A,B]);P
+</input>
+<output>
+The cartesian product of ({0, 1, 2}, {'a', 'b'})
+</output>
+</sage>
+<p>Here is the cardinality of the cartesian product.</p>
+<sage>
+<input>
+P.cardinality()
+</input>
+<output>
+6
+</output>
+</sage>
+<p>
+The power set of a set is an iterable, as you can see from the output of this next cell
+</p>
+<sage>
+<input>
+U=Set([0,1,2,3])
+subsets(U)
+</input>
+<output>
+&lt;generator object powerset at 0x7fec5ffd33c0>
+</output>
+</sage>
+<p>
+You can iterate over a powerset. Here is a trivial example.  
+</p>
+<sage>
+<input>
+for a in subsets(U):
+    print(str(a)+ " has " +str(len(a))+" elements.")
+</input>
+<output>
+[] has 0 elements.
+[0] has 1 elements.
+[1] has 1 elements.
+[0, 1] has 2 elements.
+[2] has 1 elements.
+[0, 2] has 2 elements.
+[1, 2] has 2 elements.
+[0, 1, 2] has 3 elements.
+[3] has 1 elements.
+[0, 3] has 2 elements.
+[1, 3] has 2 elements.
+[0, 1, 3] has 3 elements.
+[2, 3] has 2 elements.
+[0, 2, 3] has 3 elements.
+[1, 2, 3] has 3 elements.
+[0, 1, 2, 3] has 4 elements.
+</output>
+</sage>
+
+   
+
+</section>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="s-defining-and-describing-sets">
+<title>Defining and Describing Sets</title>
+<subsection>
+<title>The notion of a set</title>
+<p>The term set is intuitively understood by most people to mean a collection of objects that are called elements (of the set). Because a set is such a simple notion, you may be surprised to learn that it is one of the most difficult concepts for mathematicians to define to
+their own liking. For example, the description above is not a proper definition because it requires the definition of a collection. (How would you
+define <q>collection</q>?) Even deeper problems arise when you consider the possibility that a set could contain itself. Although these problems
+are of real concern to some mathematicians, they will not be of any concern to us; for our purposes, we will use the following definition: 
+<definition>
+A set is a well-defined collection of distinct objects, called elements.
+	</definition>
+</p>
+<p>
+Just as the concepts of point and line are left undefined in geometry, we will leave the concepts of collection and objects undefined, and rely on our intuitive understanding of them.</p>
+
+<example  xml:id="set-examples">
+	<title>Some examples of sets</title>
+<p><ol label="(a)">
+<li><p> The even integers less than 20, i.e. 2, 4, 6, 8, 10, 12, 14, 16, 18, is a set. </p></li>
+<li><p> The prime factors of 30 form a set. What are its elements? </p></li>
+<li><p> The five best lecturers at UCT is not a set. Why? </p></li>
+<li><p>The number of siblings each person in MAM1008S has is (probably) not a set. Why? </p></li>
+</ol></p>
+</example>
+
+<p>When encountering a new definition in mathematics, it's helpful to think of several examples of objects that meet the definition, and several objects that almost meet the definition, but not quite. Take a moment now to think of your own examples of a set, and a collection that is not a set.</p>
+
+</subsection>
+
+
+<subsection>
+<title>Describing and Naming sets</title>
+<p>When the elements of a set are enumerated (or listed) it is traditional to enclose them in curly braces. For example, the
+set of binary digits is <m>\{0, 1\}</m> and the set of decimal digits is <m>\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}</m>. This way of describing a set is called <term>roster notation</term><idx>Roster notation</idx>. The order in which elements are listed in roster notation is irrelevant: <m>\{0, 1\}</m> and <m>\{1, 0\}</m> are the same set. Sets can contain anything, including other sets (but a set isn't allowed to contain itself). </p>
+
+<example  xml:id="more-set-examples">
+	<title>Some more examples of sets</title>
+<p><ol label="(a)">
+<li><p> The set consisting of the word <em>blue</em> and the numbers 2, 4 and 6 is <m>\{blue, 2, 4, 6\}</m>, and <m>\{\{blue, 2, 4, 6\}\}</m> is the set containing just one member, namely the set <m>\{blue, 2, 4, 6\}</m>. </p></li>
+<li><p> 1 is a number, while <m> \{1\}</m> is a set containing a single member, the number 1.   </p></li>
+</ol></p>
+</example>
+
+
+
+
+<p>If we are going to discuss a set for any length of time, we usually give it a name in the form of a capital letter (or occasionally some other symbol). The choice of a set name is much like the choice of an identifier name in programming: while it is essentially arbitrary, some names are more <q>logical</q> than others. For example, we might call the set of <em>binary</em> digits <m>B</m>, in which case we write  <m>B = \{0, 1\}</m>.</p>
+
+
+<p>
+ In discussing some set <m> A</m>, if <m> x</m> is an element of <m> A</m>, then we will write <m>x \in  A</m>.<notation><usage>x \in A</usage><description><m>x</m> is an element of <m>A</m></description></notation> On the other hand, if <m> x</m> is not an element
+of <m> A</m>, we write <m>x \notin  A</m>.<notation><usage>x \notin A</usage><description><m>x</m> is not an element of <m>A</m></description></notation>. For example, <m>1 \in  B</m>, but <m>42 \notin  B</m>.
+</p> 
+
+
+<p>It is useful to have a convention for enumerating the elements of straightforward large sets without actually having to list all the elements. For example, the letters
+of the alphabet and the integers from 1 to 100 could be described as 
+<m>A = \{a, b, c,\ldots , x, y, z\}</m>, and <m>G = \{1, 2, \ldots  , 99, 100\}</m> respectively. The three consecutive <q>dots</q> are called an  <term>ellipsis</term><idx>Ellipsis</idx>. We use an ellipsis when it is clear what elements are included but not listed. An ellipsis is also used in two other situations:
+
+<ul xml:label="disc">
+	<li> 
+		to indicate that a list goes on infinitely. For example, to enumerate the positive integers, we would write <m>\{1, 2, 3,\ldots  \}</m>. To enumerate the negative integers, we would write <m>\{\ldots, -3, -2, -1\}</m>. We could write the integers as <m>\{\ldots, -3, -2, -1, 0, 1, 2, 3,\ldots  \}</m>.
+	</li>
+	<li>
+		to list a more general set. For example, to list the integers between 2 and <m> n</m>, where <m> n</m> is some undetermined positive integer, we would write <m>\{1,\ldots ,n\}</m>.
+	</li>
+</ul>
+</p>
+  
+<p> Common sets that are found throughout mathematics are given symbols that are reserved for them alone and are used (almost) universally. Some of the most common sets are:<ul>
+<li><p><m>\mathbb{N}</m>: the natural numbers, <m>\{0, 1, 2, 3, \ldots \}</m>
+<notation><usage>\mathbb{N}</usage><description><m>x</m> the set of natural numbers <m>A</m></description></notation>
+</p></li>
+<li><p><m>\mathbb{Z}</m>: the integers, <m>\{\ldots , -3, -2, -1, 0, 1, 2, 3,\ldots \}</m>
+<notation><usage>\mathbb{Z}</usage><description><m>x</m> the set of integers <m>A</m></description></notation>
+</p></li>
+<li><p><m>\mathbb{Q}</m>: the rational numbers
+<notation><usage>\mathbb{Q}</usage><description><m>x</m> the set of rational numbers <m>A</m></description></notation>
+</p></li>
+<li><p><m>\mathbb{R}</m>: the real numbers
+<notation><usage>\mathbb{R}</usage><description><m>x</m> the set of real numbers <m>A</m></description></notation>
+</p></li>
+<li><p><m>\mathbb{C}</m>: the complex numbers
+<notation><usage>\mathbb{C}</usage><description><m>x</m> the set of complex numbers <m>A</m></description></notation>
+</p></li>
+</ul>
+Since we will be
+referring to the positive integers throughout this book, we will use the symbol <m>\mathbb{P}</m> instead of writing <m>\{1, 2, 3, \ldots \}</m>. This is not a universally used symbol for postive integers, however; some mathematicians use <m>\mathbb{Z}^+</m>.
+<notation><usage>\mathbb{P}</usage><description><m>x</m> the set of integers <m>A</m></description></notation>
+
+</p>
+
+	
+<p>Another way of describing sets is to use <term>set-builder notation</term><idx>Set-Builder Notation</idx>. For example, we could define the rational numbers as <me>\mathbb{Q}=\{a/b \mid a, b \in  \mathbb{Z}, b\neq 0\}</me>.  
+
+This is read as <q>the rational numbers is the set of all fractions of the form <em>a</em> over <em>b</em>, where <em>a</em> and <em>b</em> are integers and <em>b</em> is not equal to zero. </q></p>
+
+<p>
+Specifically:<ul><li><p> <m>a/b</m> indicates that a typical element of the set is a <q>fraction</q> .</p></li>
+<li><p> The vertical line, <m>\mid</m>, is read <q>such that</q> or <q>where,</q> and is used interchangeably with a colon. </p> </li>
+<li><p> <m>a, b\in \mathbb{Z}</m> is an abbreviated way of saying <m>a</m> and <m>b</m> are integers.  </p></li>
+<li><p> Commas in mathematics are read as <q>and</q>. </p></li>
+</ul></p>
+
+<p>A proper definition of the real numbers is beyond the scope of this text, but it is sufficient to think of the real numbers as the set of points on a
+number line. The complex numbers can then be defined using set-builder notation as <m>\mathbb{C} = \{a + b i:a, b \in \mathbb{R}\}</m>, where <m>i^2 = -1</m>.  </p>
+
+<p>The important fact to keep in mind in set notation, or in any mathematical notation, is that it is meant to be a help, not a hindrance. We (hopefully) choose notation that will assist us in a more complete understanding of the collection of objects under consideration and will enable us to describe it in a concise manner. However, brevity of notation is not the aim of sets. If you prefer to write <m>a\in \mathbb{Z}</m> and <m>b\in \mathbb{Z}</m> instead of <m>a, b\in \mathbb{Z}</m>, you should do so. Also, there are frequently many different, and equally good, ways of describing sets. For example, <m>\{x\in
+\mathbb{R} \mid x^{2}-5x+6 =0\}</m> and <m>\{x \mid x \in \mathbb{R}, x^{2}-5x+6=0\}</m> both describe the solution set <m>\{2, 3\}</m>. 
+</p>
+
+</subsection>
+
+
+<subsection xml:id="ss-size-of-sets">
+<title>The Size of Sets</title>
+<p>
+It's going to be useful to be able to discuss the size of a set, by which we mean the number of elements in the set.</p>
+
+<definition  xml:id="finite-set">
+	<title>Finite Set</title>
+	<statement><p>A set is a finite set if the number of elements it has is equal to some nonnegative integer. Any set that is not finite is an infinite set.</p>
+	</statement>
+</definition> 
+<definition  xml:id="cardinality">
+<title>Cardinality</title>
+<notation>
+	  <usage>\lvert A \rvert </usage>
+	  <description>
+	  The number of elements in a finite set <m>A</m>.  	
+	  </description>
+</notation>
+<statement><p>Let <m>A</m> be a finite set. The number of elements in <m>A</m> is called its cardinality.  The cardinality of a finite set <m>A</m> is denoted <m>\lvert A \rvert</m>.</p></statement>
+</definition>   
+<!--
+<p>As we will see later, there are different infinite cardinalities. For the moment, however, we will restrict our discussion of cardinality to finite sets.</p>-->
+</subsection>
+
+<example  xml:id="set-cardinality-examples">
+<title>Some examples of sets and their cardinality</title>
+<p><ol label="(a)">
+<li><p>Let <m>P = \{5, 10, 15, 20, 25, 30\}</m>. Then <m>P</m> is a finite set and <m>\lvert P \rvert = 6</m>. </p></li>
+<li><p>Let <m>Q = \{x: x\in \mathbb{N} \textrm{ and } x\lt25.\}</m>. Then <m>Q</m> is a finite set, and <m>\lvert Q \rvert = 24</m>.
+</p></li>
+<li><p>Let <m>S = \{x : x \in \mathbb{Z} \textrm{ and } x^2 – 81 = 0\}</m>. Then <m>S = \{-9, 9\}</m>, so <m>S</m> is a finite set and <m>\lvert S \rvert  = 2</m>. </p></li>
+<li><p> <m>\mathbb{N}</m>, <m>\mathbb{Z}</m>, <m>\mathbb{Q}</m>, <m>\mathbb{R}</m> and <m>\mathbb{C}</m> are all infinite sets. </p></li>
+<li><p>The set of all points in a plane is an infinite set. </p></li>
+<li><p>The set of all points in a line segment is an infinite set. </p></li>
+
+</ol></p>
+</example>
+
+
+<subsection xml:id="ss-comparing-sets">
+<title>Comparing Sets</title>
+<definition  xml:id="def-subset">
+<title>Subset</title>
+<notation>   <usage>A \subseteq B</usage>
+				  <description>
+				  <m>A</m> is a subset of <m>B</m>.  	
+				  </description>
+</notation>
+<statement><p> Let <m>A</m> and <m>B</m> be sets. We say that <m>A</m> is a subset of <m>B</m>  if and only if every element of <m>A</m> is an element of <m>B</m>. We write <m>A \subseteq B</m> to denote the fact that <m>A</m> is a subset of <m>B</m>.</p>
+</statement>
+</definition>
+<example  xml:id="some-subsets"><title>Some Subsets</title>
+<p><ol label="(a)">
+<li><p> If <m>A = \{3, 5, 8\}</m> and <m>B = \{5, 8, 3, 2, 6\}</m>, then <m>A\subseteq B</m>. </p></li>
+<li><p>  <m>\mathbb{N}\subseteq \mathbb{Z}\subseteq \mathbb{Q}\subseteq \mathbb{R}\subseteq \mathbb{C}</m> </p></li>
+<li><p>If <m>S = \{3, 5, 8\}</m> and <m>T = \{5, 3, 8\}</m>, then <m>S \subseteq  T</m> and <m>T \subseteq  S</m>. </p></li>
+
+</ol></p>
+</example>
+
+<p>Notice that for any set <m> A</m> we have <m>A\subseteq A</m>. 
+ <m>A</m> itself is called an <term>improper subset</term><idx>Improper subset</idx> of <m>A</m>.  All other subsets of <m>A</m> are called <term>proper subsets </term><idx>Proper subset</idx> of <m>A</m>. If <m>B</m> is a proper subset of <m>A</m>, then we write <m> B \subsetneq A</m>. If <m> B \subsetneq A</m> then there must be at least one element of <m>A</m> that is not in <m>B</m>.</p>
+
+<p> Now we use the definition of a subset to define what it means for two sets to be equal:</p>
+
+<definition  xml:id="set-equality">
+<title>Set Equality</title>
+<statement><p>Let <m>A</m> and <m>B</m> be sets. We say that <m>A</m> is equal to <m>B</m> (notation <m>A = B</m>) if and only if every element of
+<m>A</m> is an element of <m>B</m> and conversely every element of <m>B</m> is an element of <m>A</m>; that is, <m>A \subseteq  B</m> and <m>B \subseteq  A</m>.</p> 
+</statement>
+</definition>
+<example  xml:id="set-equality-examples">
+<title>Examples illustrating set equality</title>
+<p><ol label="(a)">
+<li><p>In <xref ref="some-subsets" text="type-global" />, <m>S = T</m>. Note that the ordering of the elements is unimportant. </p></li>
+<li><p><m>\{1,2,3\}\neq\{\{1\},\{2\},\{3\}\}</m></p></li> 
+</ol></p>
+</example> 
+<p>A few comments are in order about the expression <q>if and only if</q> as used in our definitions. This expression means <q>is equivalent to saying,</q>
+or more exactly, that the word (or concept) being defined can at any time be replaced by the defining expression. Conversely, the expression that
+defines the word (or concept) can be replaced by the word. </p>
+
+<p>We need to be able to discuss the set that contains no elements, namely the <term>empty set </term><idx>Empty set</idx> <m>\{\}</m>, which is denoted by <m>\emptyset</m><notation><usage>\emptyset</usage><description>the empty set</description></notation>. This set is also sometimes called the null set. Given any set <m> A</m> we have <m>\emptyset \subseteq A</m> (Why?). The empty set is an improper subset of itself.</p>
+
+<note><p>Not everyone is in agreement on whether the empty set is a proper subset of any set.  In fact earlier editions of this book sided with those who considered the empty set an improper subset.  However, we bow to the emerging consensus at this time.</p></note>
+
+
+<example  xml:id="general-set-examples">
+<title>Some more general examples</title>
+<p><ol label="(a)">
+<li><p> <m>0</m> is a number, while <m>\emptyset</m> is a set. <m>\{\emptyset\}</m> is a yet a third thing: a set with a single element, namely the empty set.</p></li>
+<li><p> <m>1\in \{1, 5, 7\}</m>, but <m>1 \nsubseteq \{1, 5, 7\} </m>, because 1 is not a set. In the language of computer science,  <m>1 \nsubseteq \{1, 5, 7\} </m> has a type mismatch, because the entities on either side of <m>\subseteq</m> must both be sets. On the other hand <m>\{1\} \subseteq \{1, 5, 7\} </m>, but <m>\{1\} \notin \{1, 5, 7\} </m>.</p></li>
+
+</ol></p>
+</example>
+
+<subsection xml:id="counting-subsets">
+<title>Counting Subsets</title>
+
+<p>A natural question to ask is how many different subsets a given finite set has. Let's look at an example: how many subsets does <m>A=\{1,2,3\}</m> have?
+
+One way to answer this question is to imagine that each subset has an associated list with three items: the first item is <quote>yes</quote> if 1 is in the subset, and <quote>no</quote> if 1 is not included in the subset. The second item is <quote>yes</quote> if 2 is in the subset, <quote>no</quote> if not, and so on. So <m>\{\}</m> has the associated list <m>(no, no, no)</m>, while <m>\{1,3\}</m> has the associated list <m>(yes, no, yes)</m>. This establishes a correspondence between the length-3 yes-no lists and the subsets of <m>A</m>; if we know how many different length-3 yes-no lists are possible, then that will also tell us how many subsets <m>A</m> has. If we consider constructing a length-3 yes-no list, there are two possibilities for the first element of a list, two for the second, and two for the third, so there must be <m>2\times 2\times 2 = 2^3</m> possible lists.
+</p>
+
+<p>
+The reasoning we used above can be generalised to prove the following:
+
+<theorem>
+<statement>
+Let <m>A</m> be a finite set. Then the number of subsets of <m>A</m> is <m>2^{\lvert A \rvert}</m>.
+</statement>
+
+</theorem></p>
+
+<p>
+Given any set <m>A</m>, we can construct a set consisting of all the subsets of <m>A</m>:</p>
+
+<definition  xml:id="power-set">
+<title>Power Set </title><idx>Power Set </idx> <notation>
+				  <usage>\mathcal{P}(A)</usage>
+				  <description>
+				 The power set of <m>A</m>, the set of all subsets of <m>A</m>.    	
+				  </description>
+</notation>
+<statement><p>If <m> A</m> is any set, the power set of <m>A</m> is the set of all subsets of <m>A</m>, denoted <m>\mathcal{P}(A)</m>.</p></statement>
+
+</definition>
+<p>The two extreme cases, the empty set and all of <m>A</m>, are both included in <m>\mathcal{P}(A)</m>.</p>
+<example  xml:id="Some_Power_Sets">
+<title>Some Power Sets </title>
+<p><ul>
+<li><p><m>\mathcal{P}(\emptyset )=\{\emptyset \}</m> </p></li>
+<li><p> <m>\mathcal{P}(\{1\}) = \{\emptyset , \{1\}\}</m> </p></li>
+<li><p> <m>\mathcal{P}(\{1,2\}) = \{\emptyset , \{1\}, \{2\}, \{1, 2\}\}</m>. </p></li>
+</ul></p> 
+</example>
+</subsection>
+
+
+ 
+</subsection>  
+<exercises>
+<title>Exercises for Section 1.1 </title>
+<exercise number="1">
+<statement>
+ <p>List four elements of each of the following sets:</p>
+<p><ol label="(a)">
+ <li><p> <m>\{k \in  \mathbb{P} \mid {k - 1} \textrm{ is a multiple of 7}\}</m> </p></li>
+ <li><p> <m>\{x \mid x \textrm{ is a fruit and its skin is normally eaten}\}</m></p></li>
+ <li><p><m>\{x \in \mathbb{Q}\mid \frac{1}{x} \in \mathbb{Z}\}</m></p></li>
+ <li><p> <m>\{2n \mid n \in \mathbb{Z}, n &lt; 0 \}</m></p></li>
+ <li><p> <m>\{s \mid s = 1 + 2 + \cdots  + n \textrm{ for some } n \in \mathbb{P}\}</m></p></li>
+ </ol></p>
+</statement>
+<answer><p>These answers are not unique.</p>
+<p><ol label="(a)" cols="2">
+<li><p> \(8, 15, 22, 29\)</p></li>
+<li><p> \(\textrm{apple, pear, peach, plum}\) </p></li>
+<li><p> \(1/2, 1/3, 1/4, 1/5\)</p></li>
+<li><p> \(-8, -6, -4, -2\)</p></li>
+<li><p>\(6, 10, 15, 21\)</p></li>
+</ol></p>
+</answer></exercise>
+<exercise number="2"><statement> <p> List all elements of the following sets:</p>
+<p><ol  label="(a)">
+<li><p> <m>\{\frac{1}{n} \mid n \in \{3,4,5,6\}\}</m></p></li>
+<li><p>  <m>\{\alpha \in  \textrm{ the alphabet } \mid  \alpha \textrm{ precedes F}\}</m></p></li>
+<li><p> <m>\{x \in \mathbb{Z} \mid x = x+1 \}</m></p></li>
+<li><p> <m>\{n^2 \mid  n = -2, -1, 0, 1, 2\}</m></p></li>
+<li><p> <m>\{n \in  \mathbb{P} \mid n \textrm{ is a  factor of  24 }\}</m></p></li>
+  </ol></p>
+</statement></exercise>
+<exercise number="3"><statement><p>  Describe the following sets using set-builder notation.
+<ol label="(a)">
+<li><p> <m>\{ 5, 7, 9, \dots , 77, 79\}</m> </p></li>
+<li><p>the rational numbers that are strictly between <m>-1</m> and <m>1</m> </p></li>
+<li><p> the even integers</p></li>
+<li><p> <m>\{-18, -9,0,9, 18,27, \dots \}</m> </p></li>
+</ol></p>
+</statement>
+<answer><p><ol label="(a)"><li><p> \(\{2k + 1 \mid k \in  \mathbb{Z}, 2 \leqslant  k \leqslant  39\}\) </p></li>
+<li><p> \(\{x \in \mathbb{Q}\mid  -1 &lt; x &lt; 1\}\)</p></li>
+<li><p> \(\{2n\mid n \in  \mathbb{Z}\}\) </p></li>
+<li><p> \(\{9n\mid n \in \mathbb{Z}, -2 \leq  n\}\)</p></li>
+</ol></p>
+</answer>
+</exercise>
+<exercise number="4"><statement><p>  Use set-builder notation to describe the each of the following sets in at least two different ways: 
+<ol label="(a)">
+<li><p><m>\{1, 2, 3, 4, 5, 6, 7\}</m> </p></li>
+<li><p> <m>\{1, 10, 100, 1000, 10000\}</m>  </p></li>
+<li><p> <m>\{1, 1/2, 1/3, 1/4, 1/5, . . .\}</m> </p></li>
+<li><p>  <m>\{0\}</m></p></li>
+</ol></p>
+</statement></exercise>
+<exercise number="5"><statement><p>  Let <m>A = \{0, 2, 3\}</m>, <m>B = \{2, 3\}</m>, and <m>C = \{1, 5, 9\}</m>. Determine which of the following statements are true. Give reasons for
+your answers. </p>
+<p><ol cols="2" label="(a)">
+<li><p><m>3 \in  A</m></p></li>
+<li><p><m>\{3\} \in  A</m> </p></li>
+<li><p><m>\{3\} \subseteq A</m></p></li>
+<li><p> <m>B\subseteq A</m></p></li>
+<li><p> <m>A\subseteq B</m></p></li>
+<li><p><m>\emptyset \subseteq C</m> </p></li>
+<li><p> <m>\emptyset \in A</m></p></li>
+<li><p> <m>A\subseteq A</m></p></li>
+</ol></p>
+</statement>
+<answer><p><ol label="(a)" cols="3"><li><p> True</p></li>
+<li><p> False</p></li>
+<li><p> True</p></li>
+<li><p> True</p></li>
+<li><p> False</p></li>
+<li><p>True</p></li>
+<li><p> False</p></li>
+<li><p> True</p></li></ol></p></answer>
+</exercise>
+<exercise number="6"><statement><p> 
+List all two-element sets in <m>\mathcal{P}(\{a,b,c,d\})</m> </p>
+</statement><answer><p><m>\{a, b\}, \{a, c\}, \{a, d\}, \{b, c\}, \{b, d\} \textrm{ and } \{c, d\}</m></p></answer> </exercise>
+<exercise number="7"><statement> <p>
+List all three-element sets in <m>\mathcal{P}(\{a, b, c,d\})</m>.</p> 
+</statement> </exercise>
+<exercise number="8"><statement> 
+<p>How many singleton (one-element) sets are there in <m>\mathcal{P}(A)</m> if <m>\lvert A \rvert =n</m> ? </p>
+</statement><answer><p> There are <m>n</m> singleton subsets, one for each element.</p>
+</answer>
+</exercise>
+<exercise number="9"><statement> <p> One reason that we left the definition of a set vague is Russell's Paradox. Many mathematics and logic books contain an account of this paradox. Two references are <xref ref="biblio-stoll-1961" text="type-global" /> and <xref ref="biblio-quine-1966" text="type-global" />. Find one such reference and read it.  </p>
+</statement></exercise>
+</exercises>
+</section> 

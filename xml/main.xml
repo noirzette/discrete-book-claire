@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+<xi:include href="./bookinfo.mbx"/>
+
+<book xml:id="dmcb">
+    <title>Introduction to Discrete Mathematics</title>
+
+		<xi:include href="./doerr_levasseur/frontmatter.xml" /> 
+		<xi:include href="./doerr_levasseur/XC0.xml" /> 
+		<xi:include href="./doerr_levasseur/XC1.xml" /> 
+		<xi:include href="./doerr_levasseur/XC2.xml" /> 
+		<!--
+		<xi:include href="./Probability/ProbabilityGeneralities.xml" />
+		<xi:include href="./Probability/ProbabilityFunctions.xml" /> 
+		<xi:include href="./doerr_levasseur/XC3.xml" />    
+		<xi:include href="./doerr_levasseur/XC4.xml" />   
+		<xi:include href="./doerr_levasseur/XC5.xml" />                   
+		<xi:include href="./doerr_levasseur/XC6.xml" />                        
+		<xi:include href="./doerr_levasseur/XC7.xml" />                        
+		<xi:include href="./doerr_levasseur/XC8.xml" />                        
+		<xi:include href="./doerr_levasseur/XC9.xml" />                        
+		<xi:include href="./doerr_levasseur/XC10.xml" />             
+		<xi:include href="./doerr_levasseur/XC12.xml" /> 
+		-->
+		<xi:include href="./doerr_levasseur/backmatter.xml" />	     
+
+</book>
+</pretext>

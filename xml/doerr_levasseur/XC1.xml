@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Set Theory</title>
+<introduction>
+<p>Set theory is one of the basic building blocks of discrete mathematics. In this chapter you will learn to:
+<ul xml:label="disc">
+	<li> 
+		Define and explain concepts related to introductory set theory, including set, inclusive, element, ellipsis, finite, infinite, equality, equal, intersection, union, subset, proper subset, disjoint, universal set, cartesian product and power set.
+	</li>
+	<li> 
+		Identify and list the elements of a given set using both roster and set-builder notation
+	</li>
+	<li>
+		Use correct set notation for element membership, empty set, equality of sets, intersection, union, subset, proper subset, complement, cartesian product and power sets.
+	</li>
+	<li>
+		Use Venn diagrams to represent subset, intersection, union, complement.
+	</li>
+		Describe the relationship between the number of subsets of a set and the number of elements it has.
+	<li>
+		Define common types of numbers using set-builder notation
+	</li>
+	<li>
+		Explain the meaning of a set given in set-builder notation
+	</li>
+	<li>
+		List the elements of the power set of a given set, and the cartesian product of two given sets.
+	</li>
+	<li>
+		Understand and be able to apply the rule of products
+	</li>
+</ul>
+
+
+</p>  
+
+</introduction>
+
+<xi:include href="./S11.xml" />
+<xi:include href="./S12.xml" />
+<xi:include href="./S13.xml" />
+</chapter>	

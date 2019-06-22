@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_intro-intro">
+  <title>What is Discrete Mathematics?</title>
+  
+
+
+  <blockquote>
+    <p>dis<midpoint/>crete / dis'krët.</p>
+    <p> <em>Adjective</em>: Individually separate and distinct.</p>
+    <p><em>Synonyms</em>: separate - detached - distinct - abstract.</p>
+  </blockquote>
+
+  <p>
+  
+   It turns out that defining Discrete Mathematics is quite tricky. Wikipedia has the following to say <xref ref="biblio-wiki-2018" text="type-global" />:</p>
+   <blockquote><p>
+   Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous. In contrast to real numbers that have the property of varying "smoothly", the objects studied in discrete mathematics – such as integers, graphs, and statements in logic<xref ref="biblio-johns-2008" text="type-global" /> – do not vary smoothly in this way, but have distinct, separated values.<xref ref="biblio-weisstein-2011" text="type-global" /> Discrete mathematics therefore excludes topics in "continuous mathematics" such as calculus and analysis. Discrete objects can often be enumerated by integers. More formally, discrete mathematics has been characterized as the branch of mathematics dealing with countable sets <xref ref="biblio-berge-1962" text="type-global" /> (sets that have the same cardinality as subsets of the natural numbers, including rational numbers but not real numbers). However, there is no exact definition of the term "discrete mathematics."<xref ref="biblio-hopkins-2008" text="type-global" /> Indeed, discrete mathematics is described less by what is included than by what is excluded: continuously varying quantities and related notions.</p>
+  </blockquote>
+
+<p>  
+  Part of the reason that it is difficult to define discrete maths is that it encapsulates a large number of quite diverse subjects. For example, in this course we will study these main topics: <term>combinatorics</term> (the theory of ways things <em>combine</em>; in particular, how to count these ways), <term>discrete probability</term>, <term>symbolic logic</term>, <term>proofs</term>, <term>graph theory</term> and <term>linear algebra</term>. However, there are many other topics that belong under the discrete umbrella, including number theory, digital geometry and digital topology, algorithmics, information theory, computability and complexity - and some of these have both discrete and non-discrete versions.
+  </p> 
+
+  <p>
+    One way to get a feel for the subject is to consider the types of problems we solve in discrete maths. Here are a few examples:
+  </p>
+  <investigation>
+    <p>
+      <em>Note: Throughout the text you will see <em>Investigate!</em> activities like this one. Answer the questions in these as best you can to give yourself a feel for what is coming next.</em>
+    </p>
+    <p>
+    <ol>
+      <li>
+        <p>
+          A South African ID number is a 13-digit number which is defined by the following format: YYMMDDSSSSCAZ.
+            <ul>
+              <li>The first six digits (YYMMDD) are based on your date of birth - 8 December 1976 is 761208.</li>
+              <li> The next four digits (SSSS) are used to define your gender –  females are assigned numbers in the range 0000-4999 and males from 5000-9999.</li>
+              <li> The next digit (C) shows if you are an SA citizen - 0 – or a permanent resident - 1.</li>
+              <li> The next digit (A) was used until the late 1980s to indicate a person’s race. This has been eliminated and old ID numbers were reissued to remove this.</li>
+              <li> The last digit (Z) is a checksum digit - used to check that the number sequence is accurate using the Luhn algorithm.</li>
+            </ul>
+            How many babies can be born on a single day before there are no further unique ID numbers available? 
+        </p>
+      </li>
+      <li> The code fragment below contains an error (if you click on "Evaluate Sage", it will keep printing forever. If you do this, reload the page once you're bored of watching the scrolling text.)
+      <sage>
+      <input>
+      x=1
+      y=3
+      while x&lt;y:
+        print x, y, 'looping'
+      </input>
+      </sage>
+      How should you correct the code? You can type code directly into the window and click "Evaluate Sage" to check!
+      </li>
+      <li>
+      A taxi firm has three taxis available (A, B, and C) and three customers (1, 2, and 3) wishing to be picked up as soon as possible. The alternatives and the arrival times in minutes are given in the table below:
+      <table>
+      <caption></caption>
+  <tabular top="medium" left="medium" halign = "center">
+    <row bottom="medium">
+      <cell right="medium" halign = "center"> </cell>
+      <cell right="medium" halign = "center"> 1 </cell>
+      <cell right="medium" halign = "center"> 2 </cell>
+      <cell right="medium" halign = "center"> 3 </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium" halign = "center"> A </cell>
+      <cell right="medium" halign = "center"> 17 </cell>
+      <cell right="medium" halign = "center"> 10 </cell>
+      <cell right="medium" halign = "center"> 12 </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium" halign = "center"> B </cell>
+      <cell right="medium" halign = "center"> 9 </cell>
+      <cell right="medium" halign = "center"> 8 </cell>
+      <cell right="medium" halign = "center"> 10 </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium" halign = "center"> C </cell>
+      <cell right="medium" halign = "center"> 14 </cell>
+      <cell right="medium" halign = "center"> 4 </cell>
+      <cell right="medium" halign = "center"> 7 </cell>
+    </row>
+  </tabular>
+</table>
+
+      The firm prides itself on speedy pickups, so wants to minimize the total collection time. How should the taxis be allocated to customers?
+      </li>
+
+      
+    </ol>
+  </p>
+  </investigation>
+
+  
+
+  <p>
+    Ultimately the best way to learn what discrete maths is about is to <em>do</em> it, so let's get started. We'll begin by reviewing the building blocks of mathematics: sets.
+  </p>
+</section>
